@@ -72,7 +72,7 @@ ActiveRecord::Schema.define(version: 2019_04_30_172908) do
 
   create_table "products", force: :cascade do |t|
     t.string "name"
-    t.text "descropt"
+    t.text "description"
     t.float "price"
     t.integer "product_category_id"
     t.datetime "created_at", null: false
@@ -88,6 +88,7 @@ ActiveRecord::Schema.define(version: 2019_04_30_172908) do
     t.string "state"
     t.string "city"
     t.string "street"
+    t.integer "number"
     t.string "neighborhood"
     t.string "complement"
     t.string "reference"

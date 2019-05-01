@@ -1,8 +1,13 @@
 class CategoriesController < ApplicationController
   def index
+    @categories = Category.all.order(:title)
+    puts @categories
+    render json: @categories
+  end
 
-      @categories = Category.all.order(:title)
-      render json: @categories
-
+  def show
+    @categories = Category.all.order(:title)
+    puts @categories
+    render json: @categories
   end
 end
